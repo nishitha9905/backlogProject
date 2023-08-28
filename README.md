@@ -33,10 +33,10 @@ to see
   i have took the hamburger icon image and written the logic of offtoggle element in to the image so that when we click on the image we will get the sidebar
 
 
-  hosted url 
+  hosted url --- https://nishitha9905.github.io/backlogProject/backlogProject.html
 
-  repo url
+  repo url --- https://github.com/nishitha9905/backlogProject/blob/main/backlogProject.html
    
 
-   
+
 
