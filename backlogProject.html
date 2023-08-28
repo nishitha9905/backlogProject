@@ -1,0 +1,601 @@
+<html>
+    <head>
+        <title>Space Free HTML</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+    <style>
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .progress {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .progress-bar1 {
+            display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, white 93%, transparent 80% 100%),
+    conic-gradient(rgb(209, 20, 114) 98%,#d3d3d3 0);    
+}
+
+.progress-bar1::before {
+  content: "98%";
+}
+.progress-bar2 {
+            display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, white 93%, transparent 80% 100%),
+    conic-gradient(rgb(209, 20, 114) 95%, #d3d3d3 0);    
+}
+.progress-bar2::before {
+  content: "95%";
+}
+.progress-bar3 {
+            display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, white 93%, transparent 80% 100%),
+    conic-gradient(rgb(209, 20, 114) 89%, #d3d3d3 0);    
+}
+.progress-bar3::before {
+  content: "89%";
+}
+.progress-bar4 {
+            display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, white 93%, transparent 80% 100%),
+    conic-gradient(rgb(209, 20, 114) 85%,#d3d3d3 0);    
+}
+.progress-bar4::before {
+  content: "85%";
+}
+    
+.footer{
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding:20px;
+    margin-left:50px;
+}
+.footer-copywrite  div{
+    margin-top: 18px;
+}
+.footer-column{
+    display: flex;
+    flex-direction: column;
+}
+.footer-column-heading {
+    font-weight: bold;
+    margin-top: 24px;
+    color:white; 
+}
+.footer-column-link-container  {
+    color:white;
+    text-decoration: none;
+    margin-top: 24px;
+    
+}
+.footer-social-links img{
+    background-color: palevioletred;
+    color: white;
+}
+.footer-column-link-container a {
+    text-decoration: none;
+    color:#808080;
+}
+button {
+    background-color: black;
+    color:white;
+    padding:10px;
+    border:none;
+    margin:10px;
+}
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+.wrapper .section{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+    background: rgb(7, 105, 185);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+.wrapper .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+    color: #a2ecff;
+}
+body.active .wrapper .sidebar{
+    left: -225px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
+
+    </style>
+    <body>
+
+<div >
+    <div style="display: flex;justify-content: space-between;">
+        <div id="Home">
+                <h2 style="margin-left: 60px;margin-top: 50px;">Space.</h2>
+            <h2 style="margin-top: 80px;margin-left: 60px;">Hey! I'm Space.</h2>
+            <p style="margin-left: 60px;"><b>A minimal, clean, and AJAX driven free portfolio template created by the fine folks at Colorlib.</b></p>
+            <button style="width:250px;height:50px;padding:5px;margin-left:60px ;">More free templates here</button>
+        </div>
+    
+        <button class="btn btn-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="padding:0px;height: auto;border: none;margin-top: -150px;">
+            <img src="https://img.favpng.com/24/23/8/hamburger-button-cheeseburger-french-fries-computer-icons-png-favpng-jW6XquiD0Yut2YTEScfRHzCLp.jpg" width="50" />
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width:250px;">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul type="none">
+                <li>
+                    <a href="#Home" style="text-decoration: none;color:#000">Home</a>
+                </li>
+                <li>
+                    <a href="#Portfolio" style="text-decoration: none;color:#000">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#Services" style="text-decoration: none;color:#000">Services</a>
+                </li>
+                <li>
+                    <a href="#About" style="text-decoration: none;color:#000">About</a>
+                </li>
+                <li>
+                    <a href="#Contact" style="text-decoration: none;color:#000">Contact us</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- <div class="wrapper">
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="#" class="active">
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                            <span class="item">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-user-friends"></i></span>
+                            <span class="item">Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                            <span class="item">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-database"></i></span>
+                            <span class="item">Contact us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+    </div>
+            
+            
+            <div id="Portfolio" style="display: grid;justify-content:space-evenly;align-content: center;grid-template-columns: repeat(3,350px);grid-template-rows: auto;margin-top: 80px;margin-left:30px;">                
+                <img src="https://preview.colorlib.com/theme/space/images/img_1.jpg" width="350" height="500" />
+                <img src="https://preview.colorlib.com/theme/space/images/img_2.jpg" width="350" height="350"/>
+                <img src="https://preview.colorlib.com/theme/space/images/img_3.jpg" width="350" height="500" />
+                <img src="https://preview.colorlib.com/theme/space/images/img_6.jpg" width="350" height="500" style="margin-top: 30px;"/>
+                <img src="https://preview.colorlib.com/theme/space/images/img_4.jpg" width="350" height="350" style="margin-top: -120px;" />
+                <img src="https://preview.colorlib.com/theme/space/images/img_5.jpg" width="350" height="250" style="margin-top: 30px;"/>
+                <img src="https://preview.colorlib.com/theme/space/images/img_9.jpg" width="350" height="500" style="margin-top: 30px;" />
+                <img src="https://preview.colorlib.com/theme/space/images/img_8.jpg" width="350" height="350" style="margin-top: -120px;"/>
+                <img src="https://preview.colorlib.com/theme/space/images/img_7.jpg" width="350" height="500" style="margin-top: -210px;"/>
+                <img src="https://preview.colorlib.com/theme/space/images/img_11.jpg" width="350" height="350" style="margin-top: 30px;" />
+                <img src="https://preview.colorlib.com/theme/space/images/img_10.jpg" width="350" height="350" />
+                <img src="https://preview.colorlib.com/theme/space/images/img_12.jpg" width="350" height="350" style="margin-top: -200px;"/>
+            </div>
+</div>
+    <div id="Services">
+        <h2 style="text-align: center;">Services</h2>
+        <p style="text-align: center;">The skills to pay the bills.</p>
+    <div style="display: grid;justify-content:space-evenly;align-content: center;grid-template-columns: repeat(3,350px);grid-template-rows: auto;">
+        <div style="width: 350px;">
+        <div class="gsap-reveal-hero mb-3">
+            <span class="icon-laptop_mac"></span>
+        </div>
+        <h3 >Web Design</h3>
+        <p style="color:#808080">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>    
+        </div>
+        <div style="width: 350px;">
+            <div class="gsap-reveal-hero mb-3">
+                <span class="icon-camera2"></span>
+            </div>
+            <h3 class="gsap-reveal-hero">Photography</h3>
+            <p style="color:#808080">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>                
+        </div>
+        <div style="width: 350px;">
+            <div class="gsap-reveal-hero mb-3">
+                <span class="icon-camera2"></span>
+            </div>
+            <h3 class="gsap-reveal-hero">Marketing</h3>
+            <p style="color:#808080">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+        <div style="width: 350px;">
+            <div class="gsap-reveal-hero mb-3">
+                <span class="icon-camera2"></span>
+            </div>
+            <h3 class="gsap-reveal-hero">App Development</h3>
+            <p style="color:#808080">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+        <div style="width: 350px;">
+            <div class="gsap-reveal-hero mb-3">
+                <span class="icon-camera2"></span>
+            </div>
+            <h3 class="gsap-reveal-hero">Branding</h3>
+            <p style="color:#808080">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+        <div style="width: 350px;">
+            <div class="gsap-reveal-hero mb-3">
+                <span class="icon-camera2"></span>
+            </div>
+            <h3 class="gsap-reveal-hero">Search Ranking</h3>
+            <p style="color:#808080">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+
+
+    </div>
+        
+    </div>
+    <div id="About" style="margin: 20px;">
+        <h2>About</h2>
+        <p style="font-size: 20px;color:#808080">Far far away, behind the word mountains, far from the <br/> countries Vokalia and Consonantia, there live the blind <br/> texts.</p>
+        <div style="display: flex; margin-top: 100px;">
+            <div style="display: flex;">
+            <img src="https://preview.colorlib.com/theme/space/images/about_pic.jpg" width="550" height="700" style="margin-left: 30px;"/>
+            <div style="background-color: palevioletred;color:white;margin-top: 350px;width:300px;height:100px;margin-left: -250px;">
+                <h3>12 Years of Experience</h3>
+                <ul type="disc">
+                    <li>See portfolio</li>
+                    <li>download my CV</li>
+                </ul>
+            </div>
+            </div>
+        <div style="display: flex;flex-direction: column;padding-left: 20px;margin-top:-100px">
+                <h2>Bio</h2>
+            <p style="color:#808080;font-size: 20px;">
+                Far far away, behind the word mountains, far from <br/>the countries Vokalia and Consonantia, there live <br/> the blind texts. Separated they live in <br/> Bookmarksgrove right at the coast of the Semantics,<br/> a large language ocean.
+            </p>
+            <p style="color:#808080;font-size: 20px;">
+                A small river named Duden flows by their place and <br/> supplies it with the necessary regelialia. It is a <br/> paradisematic country, in which roasted parts of <br/> sentences fly into your mouth.
+            </p>
+            <div >
+                <h2>Work Experience</h2>
+                <ul style="display: flex;justify-content: space-between;">
+                    <li>
+                        <h5>Senior Web Designer</h5>
+                        <h5>XYZ Agency</h5>
+                        <p>2012-2014</p>
+                    </li>
+                    <li style="margin-left: 100px;">
+                        <h5>Front-end Engineer</h5>
+                        <h5>StudioLab Studio</h5>
+                        <p>2012-2014</p>
+                    </li>
+                </ul>
+                <ul style="display: flex;justify-content: space-between;">
+                    <li>
+                        <h5>Senior Web Designer</h5>
+                        <h5>XYZ Agency</h5>
+                        <p>2012-2014</p>
+                    </li>
+                    <li >
+                        <h5>Front-end Engineer</h5>
+                        <h5>StudioLab Studio</h5>
+                        <p>2012-2014</p>
+                    </li>
+                </ul>
+                    <ul style="display: flex;justify-content: space-between;">
+                    <li>
+                        <h5>Senior Web Designer</h5>
+                        <h5>XYZ Agency</h5>
+                        <p>2012-2014</p>
+                    </li>
+                    <li >
+                        <h5>Front-end Engineer</h5>
+                        <h5>StudioLab Studio</h5>
+                        <p>2012-2014</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            
+
+        </div>
+        
+
+    </div>
+    <div style="margin-top: 30px;">
+        <h2 style="text-align: center;">Skills</h2>
+        <p style="text-align: center;">The skills to pay the bills.</p>
+        <div class="progress" style="margin-top: 30px;width:100%;height:200px">
+            <div>
+                 <div class="progress-bar1">
+                <progress value="98" min="0" max="100" style="visibility:hidden;height:0;width:0;">98%</progress>
+            </div>
+            <h3>Word Press</h3>
+        </div>
+           <div>
+            <div class="progress-bar2">
+                <progress value="98" min="0" max="100" style="visibility:hidden;height:0;width:0;">98%</progress>
+            </div>
+            <h3>Web design</h3>
+        </div>
+            <div>
+                <div class="progress-bar3">
+                <progress value="98" min="0" max="100" style="visibility:hidden;height:0;width:0;">98%</progress>
+            </div>
+            <h3>Web/mobile App</h3>
+        </div>
+            <div>
+                 <div class="progress-bar4">
+                <progress value="98" min="0" max="100" style="visibility:hidden;height:0;width:0;">98%</progress>
+            </div>
+            <h3>Photoshop</h3>
+        </div>
+           
+        </div>
+    <div style="text-align: center;margin-top: 50px;">
+        <h1 >Testimonials</h1>
+        <p>What clients say...</p>
+        <div style="display: flex;justify-content: space-evenly;align-content: center;"> 
+            <div style="width:300px">
+            <img src="https://preview.colorlib.com/theme/space/images/person_1.jpg" width="100" height="100" style="border-radius: 50%;"/>
+            <h2>James Smith</h2>
+            <p style="color:grey">CEO & Co-Founder</p>
+            <p style="color:rgb(53, 53, 53)">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+           </div>
+           <div style="width:300px">
+            <img src="https://preview.colorlib.com/theme/space/images/person_1.jpg" width="100" height="100" style="border-radius: 50%;"/>
+            <h2>James Smith</h2>
+            <p style="color:grey">CEO & Co-Founder</p>
+            <p style="color:rgb(53, 53, 53)">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+           </div>
+           <div style="width:300px">
+            <img src="https://preview.colorlib.com/theme/space/images/person_1.jpg" width="100" height="100" style="border-radius: 50%;"/>
+            <h2>James Smith</h2>
+            <p style="color:grey">CEO & Co-Founder</p>
+            <p style="color:rgb(53, 53, 53)">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+           </div>
+
+    </div>
+       
+    </div>
+    <div style="margin-top: 30px;"> 
+        <h1 style="text-align: center;">Blog Posts</h1>
+        <p style="text-align: center;">News & Updates</p>
+        <div style="display: flex;justify-content: space-evenly;align-content: center;">
+             <div>
+            <img src="https://preview.colorlib.com/theme/space/images/gal_1.jpg" width="200" height="200"/>
+            <h3>Separated they live in</h3>
+            <p>Aug 4, 2020 by <b>Admin</b>  in <b>Web <br/>Design</b></p>
+        </div>
+        <div>
+            <img src="https://preview.colorlib.com/theme/space/images/gal_2.jpg" width="200" height="200" />
+            <h3>Separated they live in</h3>
+            <p>Aug 4, 2020 by <b>Admin</b>  in <b>Web <br/> Design</b></p>
+        </div>
+        <div>
+            <img src="https://preview.colorlib.com/theme/space/images/gal_3.jpg" width="200" height="200" />
+            <h3>Separated they live in</h3>
+            <p>Aug 4, 2020 by <b>Admin</b>  in <b>Web <br/> Design</b></p>
+        </div>
+        <div>
+            <img src="https://preview.colorlib.com/theme/space/images/gal_4.jpg" width="200" height="200" />
+            <h3>Separated they live in</h3>
+            <p>Aug 4, 2020 by <b>Admin</b>  in <b>Web <br/> Design</b></p>
+        </div>
+    </div>
+       
+    </div>
+    <div id="Contact" style="margin-top: 30px;">
+        <h1 style="text-align: center;">Contact</h1>
+        <p style="text-align: center;">Available for work.Get in touch</p>
+        <div style="display: flex;justify-content: space-around;margin-top: 30px;margin-bottom: 30px;">
+            <div>
+                <input type="text" placeholder="First Name" style="width:235px;margin-right: 20px;" />
+                <input type="text" placeholder= "Last Name" style="width:235px" /> <br/><br/><br/>
+                <input type="email" placeholder="Email Address" style="width: 500px;"/> <br/><br/><br/>
+                <textarea style="width: 500px;" rows="20" cols="20">Write your message...</textarea><br/><br/><br/>
+                <button style="width:150px;height:50px;padding:5px">Send Message</button>
+            </div>
+            <div id="map" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320.12856481718734!2d-73.97263090448001!3d40.78263296621774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588ff21eaaab%3A0xd0128d5d89a30429!2sMargarita%20Anthoine!5e0!3m2!1sen!2sph!4v1597149027268!5m2!1sen!2sph" frameborder="0" style="border:0;width:500px;height:400px" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-copywrite">
+                    <div class="footer-column-heading">Home</div>
+                    <div class="footer-column-link-container">
+                        <a class="footer-column-link" href="#">colorlib</a>
+                    </div>
+                    <div class="footer-column-link-container">
+                        <a class="footer-column-link" href="#">About us</a>
+                    </div>
+                    <div class="footer-column-link-container">
+                        <a class="footer-column-link" href="#">Projects</a>
+                    </div>
+                    <div class="footer-column-link-container">
+                        <a class="footer-column-link" href="#">Services</a>
+                    </div>
+                    <div class="footer-column-link-container">
+                        <a class="footer-column-link" href="#">Terms</a>
+                    </div>
+                    <div class="footer-column-link-container">
+                        <a class="footer-column-link" href="#">Privacy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column-heading">Projects</div>
+                <div class="footer-column-link-container">
+                    <a class="footer-column-link" title="Download" href="/tour#signup">HTML5</a>
+                </div>
+                <div class="footer-column-link-container">
+                    <a class="footer-column-link" title="Overview" href="/">CSS3</a>
+                </div>
+                <div class="footer-column-link-container">
+                    <a class="footer-column-link" title="Examples" href="/examples">Colorlib</a>
+                </div>
+                <div class="footer-column-link-container">
+                    <a class="footer-column-link" title="Blog" href="/blog">Free Templates</a>
+                </div>
+                <div class="footer-column-link-container">
+                    <a class="footer-column-link" title="Blog" href="/blog">WordPress Themes</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column-heading">Services</div>
+                <div class="footer-column-link-container">
+                    <a title="Notice" href="NOTICE.txt" target="_lobe_external" class="footer-column-link" download="">Colorlib</a>
+                </div>
+                <div class="footer-column-link-container">
+                    <a class="footer-column-link" title="License" href="/license">jQuery</a>
+                </div>
+                <div class="footer-column-link-container">
+                    <a title="Press Inquiry" href="https://news.microsoft.com/microsoft-public-relations-contacts/" target="_lobe_external" class="footer-column-link">Bootstrap</a>
+                </div>
+                <div class="footer-column-link-container">
+                    <a title="Press Images" href="/assets/press/lobe-press-images.zip" target="_lobe_external" class="footer-column-link" download="">Freebies</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column-heading">Contact</div>
+                <div class="footer-column-link-container">
+                    <a title="Help" href="/docs/welcome/welcome" class="footer-column-heading">43 Raymouth Rd. Baltemoer, London 3910</a>
+                </div>
+                <div class="footer-column-link-container">
+                    <a class="footer-column-link" title="Tour" href="/tour">+1(123)-456-7890</a>
+                </div>
+                <div class="footer-column-link-container">
+                    <a title="Contact" href="mailto:lobeai@microsoft.com" class="footer-column-link">+1(123)-456-7890</a>
+                </div>
+                <div class="footer-column-link-container">
+                    <a title="Privacy" href="https://go.microsoft.com/fwlink/?LinkId=521839" target="_lobe_external" class="footer-column-link">info@mydomain.com</a>
+                </div>
+                <div class="footer-column-heading">
+                    <a class="footer-column-link-container" href="#">Connect</a>
+                    <div class="footer-social-links">
+                       <img src="./Assets/instagram.svg" width="30" height="30" style="border-radius: 50%;"/>
+                       <img src="./Assets/twitter.svg" width="30" height="30" style="border-radius: 50%;"/>
+                       <img src="./Assets/facebook.svg" width="30" height="30" style="border-radius: 50%;"/>
+                       <img src="./Assets/linkedin.svg" width="30" height="30" style="border-radius: 50%;"/>
+                       <img src="./Assets/pinterest.svg" width="30" height="30" style="border-radius: 50%;" />
+                       <img src="./Assets/globe-solid.svg" width="30" height="30" style="border-radius: 50%;"/>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div>
+            <p style="color:#808080; text-align: center;font-size: 20px;">Copyright ©2023 All rights reserved | This template is made with  by Colorlib</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>
